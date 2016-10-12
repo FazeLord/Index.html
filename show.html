@@ -1,0 +1,68 @@
+ <html id="posts">
+ <style type="text/css">
+            #posts {
+                width: 90%;
+                height: 700px;
+                margin: auto
+            }
+        </style>
+
+
+<h1 align=center>t1a02-show by sam </h1>
+
+<input id="myInput" type=text value="3"> <br><br>
+
+
+        
+
+<input type=button value="Loop Add" onclick="{
+
+  myOut = document.getElementById('myArea')
+  myIn  = document.getElementById('myInput').value
+  myTotal = 0;
+  myNumber = myIn;
+   if (+ myIn == 69){
+   ran_col()
+   }
+   if(+ myIn >= 1){
+	 
+	 
+  for (myCount = 1; myCount <= myIn ; myCount++){
+     
+         myTotal += + myNumber
+
+    
+	
+	
+     myOut.innerHTML = myIn + ' repeat adding =' + myTotal
+	 
+  }
+  
+ }else{
+ myOut.innerHTML = 'Enter a positive number'
+ }
+
+}"> <br><br>
+
+
+
+<div id="myArea" > Your output will go here <br></div> <br>
+
+<input type=button value="Show myIn.value" onclick="{
+  
+   alert(myIn)
+
+}">
+<script type="text/javascript">
+            function ran_col() { //function name
+            window.setTimeout( "ran_col()", 10);
+                var color = '#'; // hexadecimal starting symbol
+                var letters = ['000000','FF0000','00FF00','0000FF','FFFF00','00FFFF','FF00FF','C0C0C0']; //Set your colors here
+                color += letters[Math.floor(Math.random() * letters.length)];
+                document.getElementById('posts').style.background = color; // Setting the random color on your div element.
+                document.getElementById('posts').style.background = color; // Setting the random color on your div element.
+            }
+        </script>s
+
+</div>
+</html>
