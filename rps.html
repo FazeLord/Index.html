@@ -1,0 +1,125 @@
+<h1 align=center  >Rock Paper Scissors</h2>
+
+
+<input type=button value="Rock" onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1
+   
+   if (document.myRandom == 1){
+    document.myOutcome = 'Tie'
+    document.getElementById('myImage1').src=
+'https://img.pokemondb.net/artwork/onix.jpg'
+
+document.getElementById('myImage2').src=
+'https://img.pokemondb.net/artwork/onix.jpg'
+   }
+   
+   if (document.myRandom == 2){
+       document.myOutcome = 'Lose'
+         document.getElementById('myImage1').src=
+'https://img.pokemondb.net/artwork/onix.jpg'
+
+  document.getElementById('myImage2').src=
+'http://www.thegreenhead.com/imgs/paper-airplane-doorstop-2.jpg'
+   }
+
+   if (document.myRandom == 3){
+       document.myOutcome = 'Win'
+       document.getElementById('myImage1').src=
+'https://img.pokemondb.net/artwork/onix.jpg'
+document.getElementById('myImage2').src=
+'https://images-na.ssl-images-amazon.com/images/I/416guYFhJSL._UX342_.jpg'
+   }
+   
+   
+   document.getElementById('myOut1').innerHTML = 'Rock ' +
+       document.myOutcome
+}">
+
+
+<div id="myOut1">Output here</div>
+
+
+
+
+
+
+<input type=button value="Paper" onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1
+   
+   if (document.myRandom == 1){
+    document.myOutcome = 'Win'
+     document.getElementById('myImage1').src=
+'http://www.thegreenhead.com/imgs/paper-airplane-doorstop-2.jpg'
+document.getElementById('myImage2').src=
+'https://img.pokemondb.net/artwork/onix.jpg'
+   }
+   
+   if (document.myRandom == 2){
+       document.myOutcome = 'Tie'
+        document.getElementById('myImage1').src=
+'http://www.thegreenhead.com/imgs/paper-airplane-doorstop-2.jpg'
+document.getElementById('myImage2').src=
+'http://www.thegreenhead.com/imgs/paper-airplane-doorstop-2.jpg'
+   }
+   
+   if (document.myRandom == 3){
+       document.myOutcome = 'Lose'
+        document.getElementById('myImage1').src=
+'http://www.thegreenhead.com/imgs/paper-airplane-doorstop-2.jpg'
+document.getElementById('myImage2').src=
+'https://images-na.ssl-images-amazon.com/images/I/416guYFhJSL._UX342_.jpg'
+   }
+   
+   document.getElementById('myOut2').innerHTML = 'Paper ' +
+       document.myOutcome
+}">
+
+
+<div id="myOut2">Output here</div>
+
+
+
+
+
+<input type=button value="Scissors" onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1
+   
+   if (document.myRandom == 1){
+    document.myOutcome = 'Lose'
+     document.getElementById('myImage1').src=
+'https://images-na.ssl-images-amazon.com/images/I/416guYFhJSL._UX342_.jpg'
+document.getElementById('myImage2').src=
+'https://img.pokemondb.net/artwork/onix.jpg'
+   }
+   
+   if (document.myRandom == 2){
+       document.myOutcome = 'Win'
+       document.getElementById('myImage1').src=
+'https://images-na.ssl-images-amazon.com/images/I/416guYFhJSL._UX342_.jpg'
+document.getElementById('myImage2').src=
+'http://www.thegreenhead.com/imgs/paper-airplane-doorstop-2.jpg'
+   }
+   
+   if (document.myRandom == 3){
+       document.myOutcome = 'Tie'
+        document.getElementById('myImage1').src=
+'https://images-na.ssl-images-amazon.com/images/I/416guYFhJSL._UX342_.jpg'
+document.getElementById('myImage2').src=
+'https://images-na.ssl-images-amazon.com/images/I/416guYFhJSL._UX342_.jpg'
+   }
+   
+   document.getElementById('myOut3').innerHTML = 'Paper ' +
+       document.myOutcome
+}">
+
+
+
+
+<div id="myOut3">Outputhere</div>
+
+<img id="myImage1" src="" width=200>
+
+<img id="myImage2" src="" width=200>
