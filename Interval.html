@@ -1,0 +1,81 @@
+<h1 align=centre> T1A12 Interval Sam<h1/>
+
+
+<img src="http://static.comicvine.com/uploads/original/11111/111115290/3087015-4408324517-29534.png" id="myImage" style= "position:absolute;left:500;top:100;" width="300">Super Saiyan</img>
+<br>
+<button onclick="myFunction()">HAAAAAAAAAAAAA</button>
+
+<script>
+
+function myFunction() {
+  setInterval(function(){
+    
+    
+   var Left = Math.floor(Math.random()*100)-49
+   var Top = Math.floor(Math.random()*100)-49
+    document.getElementById('myImage').style.left = 
+    parseInt(document.getElementById('myImage').style.left) + Left + 'px';
+    
+    
+     document.getElementById('myImage').style.top = 
+    parseInt(document.getElementById('myImage').style.top) + Top + 'px';
+  
+  if(parseInt(document.getElementById('myImage').style.left)<'10'){
+    document.getElementById('myImage').style.left = parseInt(document.getElementById('myImage').style.left) + 50+ 'px';
+  }
+     if(parseInt(document.getElementById('myImage').style.left)>'990'){
+    document.getElementById('myImage').style.left = parseInt(document.getElementById('myImage').style.left) - 50+ 'px';
+     }
+   if(parseInt(document.getElementById('myImage').style.top)<'600'){
+    document.getElementById('myImage').style.top = parseInt(document.getElementById('myImage').style.top) + 50+ 'px';
+   }
+    if(parseInt(document.getElementById('myImage').style.top)>'10'){
+    document.getElementById('myImage').style.top = parseInt(document.getElementById('myImage').style.top) - 50+ 'px';
+}
+  
+  
+  }, 100);
+  
+}
+
+
+  
+  
+  
+  
+  
+  
+    
+</script>
+
+
+
+
+
+<script>
+function myFunction01(){
+    document.getElementById('myDiv1').style.left = 
+    parseInt(document.getElementById('myImag').style.left) + 5 + 'px'
+  
+  
+  
+  // too complex  
+  //  if (parseInt(document.getElementById('myDiv1').style.left) >= document.body.clientWidth-parseInt(document.getElementById('myDiv1').style.width)){
+  //    document.getElementById('myDiv1').style.left = document.body.clientWidth-parseInt(document.getElementById('myDiv1').style.width) + 'px'  
+  //  }
+  
+  // this is easier
+     if (parseInt(document.getElementById('myDiv1').style.left) >= 180){
+        document.getElementById('myDiv1').style.left = 180 + 'px'  
+    }   
+    
+}    
+</script>
+
+
+
+
+<div id="myDiv1" style="position:relative; left:0px; top:0px; width:50px; height:40px; " >
+    
+</div>
+
