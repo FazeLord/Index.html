@@ -1,0 +1,34 @@
+<button onclick="myFunction1()">Move A</button>
+<button onclick="myFunction2()">Move B</button>
+<img id="image1" src="https://cdn.vectorstock.com/i/composite/79,30/letter-a-with-tribal-design-vector-1427930.jpg" width="100" style= "position:absolute;left:200;top:100;">
+
+<script>
+    var w = screen.width;
+    var x=5;
+    
+    
+  function myFunction1() {
+  setInterval(function(){ 
+      
+      document.all.image1.style.left = parseInt(document.all.image1.style.left) + x + 'px';
+      
+      
+        if(parseInt(document.all.image1.style.left)>w-90){
+          x*=-1;
+    
+  
+        
+        
+        }
+      
+   },25);
+  }
+  
+
+  
+    
+    
+    
+    
+    
+</script>
