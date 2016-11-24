@@ -1,0 +1,44 @@
+function myStudent(myAge, myName, myImg){
+   this.myStudentAge = myAge
+   this.myStudentName = myName
+   this.myStudentImage = myImg
+   this.myBetterInfo = function(){
+      document.getElementById('myDiv1').innerHTML = ' My name is ' + this.myStudentName + ' <br>'
+      document.getElementById('image').src= 
+myName + '.jpg'
+   };
+
+
+}
+
+
+
+
+</script>
+
+
+
+
+<input type=button value="Show Fred" onclick="{
+  myFred = new myStudent(20,'fred','http')
+  myFred.myBetterInfo() 
+}">
+
+
+<input type=button value="Show Mary" onclick="{
+ myFred = new myStudent(20,'mary','http')
+  myFred.myBetterInfo()
+}">
+
+
+
+
+<div id='myDiv1'>stuff here </div>
+
+<img id="image" src="" width="300"  style= "position:absolute;left:200;top:100;">
+
+
+
+
+
+
